@@ -1,0 +1,152 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: white;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #00f5ff;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+/* Input Field */
+#task {
+    width: 320px;
+    height: 45px;
+    padding: 10px 15px;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 8px;
+    outline: none;
+
+    background-color: #1f1f1f;
+    color: white;
+
+    transition: 0.3s ease;
+}
+
+#task:focus {
+    border: 1px solid #00f5ff;
+    box-shadow: 0 0 8px #00f5ff50;
+}
+
+/* Add Button */
+#submit {
+    height: 45px;
+    padding: 0 20px;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #00f5ff;
+    color: black;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #00c9d8;
+    transform: scale(1.05);
+}
+
+/* Task Container */
+#allTask {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Individual Task Card */
+#allTask div {
+    background-color: #1c1c1c;
+    padding: 15px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+}
+
+#allTask div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+/* Task Text */
+#allTask span {
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Buttons Inside Tasks */
+#allTask button {
+    margin-left: 8px;
+    padding: 6px 12px;
+
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+/* Done Button */
+#allTask button:nth-child(2) {
+    background-color: #2ecc71;
+    color: black;
+}
+
+#allTask button:nth-child(2):hover {
+    background-color: #27ae60;
+}
+
+/* Delete Button */
+#allTask button:nth-child(3) {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#allTask button:nth-child(3):hover {
+    background-color: #c0392b;
+}
+
+/* Completed Task Styling */
+.completed {
+    text-decoration: line-through;
+    color: #888;
+    opacity: 0.7;
+}
