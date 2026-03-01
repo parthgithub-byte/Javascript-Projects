@@ -4,21 +4,33 @@ const display = document.querySelector('#display');
 
 let timer = null;
 
-startBtn.addEventListener('click', ()=>{
-    if (timer)  clearInterval(timer);
+startBtn.addEventListener('click', () => {
 
-    let seconds = parseInt(input.value);
+    // Always clear previous timer properly
+    if (timer !== null) {
+        clearInterval(timer);
+        timer = null;
+    }
 
-    if (isNaN(seconds) || seconds<=0) return;
+    let seconds = Number(input.value);
+
+    if (!Number.isInteger(seconds) || seconds <= 0) {
+        display.textContent = "Enter valid seconds";
+        return;
+    }
+
     display.textContent = seconds;
 
-    timer = setInterval(()=>{
+    timer = setInterval(() => {
         seconds--;
-        display.textContent = seconds;
 
-        if (seconds<=0){
+        if (seconds <= 0) {
             clearInterval(timer);
-            display.textContent = 'done'
+            timer = null;
+            display.textContent = "Done";
+        } else {
+            display.textContent = seconds;
         }
+
     }, 1000);
-})
+});
