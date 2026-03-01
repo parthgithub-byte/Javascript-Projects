@@ -53,6 +53,7 @@ This portfolio showcases interactive UI components, DOM manipulation, event hand
 
 ### 🖱️ Clicker Game
 - Interactive UI updates
+- Random selection for outputs
 
 ### 📝 To-Do App
 - Add & delete tasks
