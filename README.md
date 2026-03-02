@@ -8,7 +8,7 @@ This portfolio showcases interactive UI components, DOM manipulation, event hand
 
 ## 🌐 Live Preview
 
-> ()
+> (https://parthminiapps.netlify.app)
 
 ---
 
