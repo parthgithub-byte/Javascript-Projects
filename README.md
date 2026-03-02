@@ -79,21 +79,21 @@ This portfolio showcases interactive UI components, DOM manipulation, event hand
 ---
 
 ## 📁 Project Structure
-Portfolio/
-│── index.html
-│── style.css
-│
-├── project1-quotes-generator/
-├── project2-background-changer/
-├── project3-love-calculator/
-├── project4-income-tax-calculator/
-├── project5-digital-clock/
-├── project6-olympic-countdown/
-├── project7-astrology-app/
-├── project8-clicker-game/
-├── project9-todo-app/
-├── project10-quiz-site/
-
+Portfolio/  
+│── index.html  
+│── style.css  
+│  
+├── project1-quotes-generator/  
+├── project2-background-changer/  
+├── project3-love-calculator/  
+├── project4-income-tax-calculator/  
+├── project5-digital-clock/  
+├── project6-olympic-countdown/  
+├── project7-astrology-app/  
+├── project8-clicker-game/  
+├── project9-todo-app/  
+├── project10-quiz-site/  
+  
 ---
 
 ## 🎯 Learning Goals
