@@ -49,12 +49,13 @@ Portfolio/
 │
 ├── project1-quotes-generator/
 ├── project2-background-changer/
+├── project1&2-combined/
 ├── project3-love-calculator/
 ├── project4-income-tax-calculator/
 ├── project5-digital-clock/
 ├── project6-olympic-countdown/
+├── project6.5-countdown-timer/
 ├── project7-astrology-app/
-
 ├── project8-clicker-game/
 ├── project9-todo-app/
 └── project10-quiz-site/
